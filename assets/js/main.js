@@ -1,3 +1,18 @@
+function showLoader(event) {
+    event.preventDefault(); // Prevents the default form submission initially
+
+    // Hide the submit button
+    document.getElementById("submitButton").style.display = "none";
+
+    // Show the loader
+    document.getElementById("loader").style.display = "block";
+
+    // Allow the form to submit after a short delay (to ensure loader is visible)
+    setTimeout(() => {
+      event.target.submit();
+    }, 500); // Adjust delay if needed
+  }
+
 //Changing Title every 20 seconds
 window.setInterval(() => changetitle(), 20000);     //20000 millis ~ 20 secs
 

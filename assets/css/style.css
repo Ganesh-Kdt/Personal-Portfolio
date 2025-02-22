@@ -1,6 +1,5 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 /* ===CSS Varaibales=== */
 :root {
     --header-height: 3rem;
@@ -41,6 +40,61 @@
     --z-fixed: 100;
 }
 
+.loader {
+    border: 5px solid #000; /* Black color */
+    border-top: 5px solid #fff; /* White top border for contrast */
+    border-radius: 50%;
+    width: 40px; /* Increased size */
+    height: 40px; /* Increased size */
+    font-weight: bold; /* Makes it appear bold */
+    animation: spin 1s linear infinite;
+    margin: 10px auto;
+  }
+  
+  /* Spinning Animation */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+.qualification__details {
+    margin-top: 5px;
+  }
+  
+  .styled-list {
+    padding-left: 20px;
+    margin-top: 10px;
+    list-style: none; /* Removes default bullets */
+  }
+  
+  .styled-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333; /* Adjust for better readability */
+  }
+  
+  .styled-list li::before {
+    content: "•"; /* Custom bullet */
+    position: absolute;
+    left: 0;
+    color: #161212; /* Dark red bullet point */
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .qualification__title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .qualification__subtitle {
+    font-size: 18px;
+    color: #6c757d;
+  }
+  
 @media screen and (min-width: 768px){
     :root {
     --biggest-font-size: 4.5rem;
@@ -475,7 +529,7 @@ img {
 }
 
 .work__qualification__calendar {
-    margin-bottom: 1rem
+    margin-bottom: 0.5rem
 }
 
 .qualification__rounder {

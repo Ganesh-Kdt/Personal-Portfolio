@@ -71,9 +71,9 @@
           <span class="home__greeting">Hello, My name is</span>
           <h1 class="home__name">Ganesh Kudtarkar</h1>
           <span class="home__profession">Software Engineer</span>
-          <a href="https://drive.google.com/file/d/1RKdNnlKkRY6Zfr2NCxyhlLsj1Fn89gYW/view"
+          <a href="https://drive.google.com/file/d/1rqOqHs89SDMd3VfTqWs6hq7eSM6covnW/view"
             class="button home__button" target="_blank" aria-label="View Resume From Google Drive">View CV</a>
-          <a download="" href="assets/pdf/Ganesh Kudtarkar - Resume.pdf" class="button home__button"
+          <a download="" href="assets/pdf/Ganesh Kudtarkar Resume.pdf" class="button home__button"
             aria-label="Download Resume" target="_blank">Download CV</a>
         </div>
 
@@ -323,6 +323,14 @@
                     <i class="far fa-calendar-alt"></i>
                     October 2021 - April 2024
                   </div>
+                  <div class="qualification__details">
+                  <ul class="styled-list">
+                    <li>Automated order management using <strong>Java & Spring Boot</strong>, integrating REST APIs with logistics, scaling orders from <strong>20-30 to 400 daily</strong>.</li>
+                    <li>Developed an <strong>online assessment system</strong> using <strong>React & Spring</strong>, automating <strong>100+ student registrations</strong> and reducing scheduling from <strong>3-4 days to a single day</strong>.</li>
+                    <li>Designed a <strong>multithreaded Java solution</strong> for Excel processing, cutting bulk record upload time by <strong>85%</strong>.</li>
+                    <li>Built a <strong>scalable chat app</strong> for <strong>3000+ users</strong>, integrating a <strong>cloud-based SDK</strong>, authentication, and automated group creation.</li>
+                  </ul>
+                </div>
                 </div>
 
                 <div>
@@ -345,6 +353,12 @@
                   <div class="work__qualification__calendar">
                     <i class="far fa-calendar-alt"></i>
                     January 2021 - June 2021
+                  </div>
+                  <div class="qualification__details">
+                    <ul class="styled-list">
+                      <li>Developed and maintained <strong>SAP Business Warehouse (BW) reports</strong>, extracting, transforming, and loading data into <strong>SAP HANA</strong> using <strong>SQL-based techniques</strong>.</li>
+                      <li>Resolved data inconsistencies in <strong>SAP BW reports</strong>, analyzing and rectifying discrepancies in the <strong>data warehouse</strong>, improving report accuracy and reliability for client decision-making.</li>              
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -672,13 +686,13 @@
             <i class="bx bx-home contact__icon"></i>
             <h3 class="contact__title">Location</h3>
             <span class="contact__description">Buffalo, New York <br />USA
-              <br />Pincode: 14260</span>
+              <br />Pincode: 14214</span>
           </div>
 
           <div class="contact__box">
             <i class="bx bx-phone contact__icon"></i>
             <h3 class="contact__title">Phone</h3>
-            <span class="contact__description">+91-8657218880</span>
+            <span class="contact__description">+1 7165073866</span>
           </div>
 
           <div class="contact__box">
@@ -688,20 +702,25 @@
           </div>
         </div>
 
-        <form action="https://formsubmit.co/5b334bd91e99d3ec3afeb51260f95c5b" method="POST" class="contact__form">
+        <form action="https://formsubmit.co/gkudtarkar8@gmail.com" method="POST" class="contact__form" onsubmit="showLoader(event)">
           <div class="contact__inputs">
             <input type="text" name="name" placeholder="Name" class="contact__input" />
             <input type="email" name="email" placeholder="Email" class="contact__input" />
           </div>
 
           <div class="contact__inputs">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+            <input type="hidden" name="_autoresponse" value="Thank you for submitting">
+            <input type="hidden" name="_captcha" value="false">
             <input type="text" name="organization" placeholder="Organization" class="contact__input" />
             <input type="number" name="number" placeholder="Number" class="contact__input" />
           </div>
 
           <textarea name="message" id="" cols="0" rows="7" placeholder="Message" class="contact__input"></textarea>
 
-          <input type="submit" value="Send Message" class="button contact__button" />
+          <input type="submit" value="Send Message" class="button contact__button" id="submitButton"/>
+          <!-- Loader (Initially Hidden) -->
+          <div id="loader" class="loader" style="display: none;"></div>
         </form>
       </div>
     </section>
