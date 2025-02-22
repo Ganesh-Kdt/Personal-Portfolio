@@ -4,7 +4,7 @@
 
 ## My Personal Portfolio Website created using HTML, CSS and Vanilla JavaScript.
 
-### Visit Site at: [Ganesh | Personal Portfolio](https://04xraynal.github.io/)
+### Visit Site at: [Ganesh | Personal Portfolio](https://ganesh-kdt.github.io/Personal-Portfolio/)
 
 ---
 
@@ -33,8 +33,6 @@ For Text Icons: [Box-Icons](https://boxicons.com/) | [Font-Awesome](https://font
 For Gifs: [Giphy](https://giphy.com/)
 
 For Logos: [Vector Logo](https://www.vectorlogo.zone/) | [Seek Logo](https://seeklogo.com/)
-
-Upload and Run Projects: [Repl.it](https://replit.com/~)
 
 Contact Me Form: [FormSubmit](https://formsubmit.co/)
 
